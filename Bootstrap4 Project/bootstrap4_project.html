@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bootstrap Assignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .jumbotron-custom {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: white;
+      padding: 4rem 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    .card-custom {
+      transition: transform 0.2s ease-in-out;
+    }
+    .card-custom:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Bootstrap Assignment</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#showtimes">Showtimes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="jumbotron-custom text-center mb-4">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Welcome To My Bootstrap Assignment #1</h1>
+    <p class="lead">Enjoy!</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+  <h2 class="mb-4 text-primary">About</h2>
+  <p class="fs-5">Bootstrap is an amazing way to Style websites!</p>
+</section>
+
+<!-- Showtimes Section -->
+<section id="showtimes" class="container my-5">
+  <h2 class="mb-4 text-success">Showtimes</h2>
+  <div class="row g-4">
+
+    <!-- Kong Skull Island -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm card-custom">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong Skull Island">
+        <div class="card-body">
+          <h5 class="card-title">Kong: Skull Island</h5>
+          <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ghost in the Shell -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm card-custom">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+        <div class="card-body">
+          <h5 class="card-title">Ghost in the Shell</h5>
+          <p class="card-text">A cyborg policewoman and her task force hunt down a mysterious hacker in a cybernetic world full of intrigue.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beauty and the Beast -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm card-custom">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty and the Beast">
+        <div class="card-body">
+          <h5 class="card-title">Beauty and the Beast</h5>
+          <p class="card-text">An enchanted prince and a brave young woman discover that love goes beyond appearances in this timeless fairy tale.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+            <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <p class="mb-0">© 2025 My Bootstrap Assignment. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
