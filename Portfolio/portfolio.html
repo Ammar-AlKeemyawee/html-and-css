@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ammar Al-Keemyawee | Portfolio</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #008080, #20c997);
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #004d4d;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffdd57;
+    }
+
+    /* Hero image with text overlay */
+    .hero {
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(70%);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Centered profile image */
+    .profile-img {
+      display: block;
+      margin: 30px auto;
+      width: 200px;
+      border-radius: 50%;
+      filter: grayscale(30%) brightness(1.1);
+    }
+
+    /* Table */
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #ffffff11;
+    }
+
+    table th, table td {
+      border: 1px solid #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #008080;
+    }
+
+    /* Two-column layout */
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 10%;
+    }
+
+    .column {
+      width: 45%;
+      height: 200px;
+      background-color: #004d4d;
+      padding: 20px;
+      color: #fff;
+    }
+
+    /* Paragraph hover effect */
+    p:hover {
+      background-color: #ffffff22;
+      transition: background 0.3s;
+    }
+
+    /* Image overlay fade */
+    .img-overlay-container {
+      position: relative;
+      width: 300px;
+      margin: 30px auto;
+    }
+
+    .img-overlay-container img {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+    }
+
+    .img-overlay-container .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      border-radius: 15px;
+    }
+
+    .img-overlay-container:hover .overlay {
+      opacity: 1;
+    }
+
+    /* Autoplay muted loop video */
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    video {
+      width: 80%;
+      max-width: 800px;
+      border-radius: 15px;
+    }
+
+    /* Video with text overlay */
+    .video-overlay-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .video-overlay-container video {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .video-overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003333;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Hero Background">
+    <div class="hero-text">Hi, I'm Ammar Al-Keemyawee</div>
+  </section>
+
+  <!-- Profile Image -->
+  <img id="about" class="profile-img" src="https://images.unsplash.com/photo-1669475535925-a011d7c31d45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Ammar's Profile" />
+
+  <!-- Table -->
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Level</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>Programming</td>
+      <td>Good</td>
+    </tr>
+  </table>
+
+  <!-- Two Columns -->
+  <div class="columns">
+    <div class="column">
+      <h3>Skills</h3>
+      <p>HTML and CSS</p>
+    </div>
+    <div class="column">
+      <h3>Goals</h3>
+      <p>Become a Web developer.</p>
+    </div>
+  </div>
+
+  <!-- Paragraph with hover effect -->
+  <p id="skills" style="text-align: center; font-size: 1.2rem;">Hover over this text to see the effect!</p>
+
+  <!-- Image Overlay Fade -->
+  <div class="img-overlay-container">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Project Preview">
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Autoplay muted loop video -->
+  <section class="video-section">
+    <h2>My Showcase Video</h2>
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2022/10/24/136259-764387660_tiny.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Video with text overlay -->
+  <div class="video-overlay-container">
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2022/10/24/136259-764387660_tiny.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay-text">Web Developer in Action</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Ammar Al-Keemyawee | All Rights Reserved
+  </footer>
+
+</body>
+</html>
